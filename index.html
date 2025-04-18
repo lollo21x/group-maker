@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore Gruppi</title>
+    <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Generatore Gruppi" />
+    <link rel="manifest" href="icons/site.webmanifest" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="generator-container">
+        <h1>Generatore di gruppi</h1>
+        
+        <div class="input-container" id="groupOptionsContainer">
+            <label for="groupSize">Numero di persone per gruppo:</label>
+            <input type="number" id="groupSize" min="1" max="13" value="3">
+            <button id="generateBtn">Genera</button>
+        </div>
+        
+        <div class="groups-container" id="groupsContainer">
+            <!-- I gruppi generati appariranno qui -->
+        </div>
+    </div>
+
+    <div id="githubIcon" class="icon-button">
+        <i class="fab fa-github"></i>
+    </div>
+    <div id="backIcon" class="icon-button">
+        <i class="fas fa-arrow-left"></i>
+    </div>
+    <div id="infoIcon" class="icon-button">
+        <i class="fas fa-info"></i>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div id="infoModal" class="modal">
+        <div class="modal-header">
+            <h3>Informazioni</h3>
+        </div>
+        <p>Questo strumento permette di generare gruppi casuali a partire dall'elenco degli studenti della 3D. Seleziona il numero di persone per gruppo e clicca sul pulsante "Genera" per creare una nuova combinazione casuale.</p>
+        <p>Creato da <a href="https://lollo.framer.website" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">lollo21</a> - v1.0</p>
+        <div class="modal-footer">
+            <div></div>
+            <button id="closeInfoModal">Chiudi</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
